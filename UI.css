@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: color #f4f6f9; ;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.navbar {
+    width: 250px;
+    background: #5289ff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background: #444;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar .logo h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.navbar .logo p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.mainmenu {
+    margin-top: 30px;
+}
+
+.mainmenu button{
+    width: 120px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background: #444;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    cursor: pointer;
+}
+
+.mainmenu button :hover {
+    background: #747d8c;
+}
+
+.mainmenu {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    font-size: 28px;
+    color: #2f3542;
+}
+
+.date {
+    font-size: 12px;
+    color: #888;
+}
+
+.input-section {
+    display: flex;
+    gap: 10;
+    margin: 20px 0;
+}
+
+.input-section input{
+    width: 75%;
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.input-section button {
+    margin-left: 10px;
+    padding: 14px 18px;
+    background: #2ed573;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.input-section button :hover {
+    background: green;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    background: #ced6e0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter button :hover {
+    background: #a4b0be;
+}
+
+.tasklist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.taskitem {
+    width: 75%;
+    background: rgb(150, 69, 69);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.taskitem .left {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.taskname {
+    font-size: 15px;
+}
+
+.taskitem .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.taskitem .date {
+    font-size: 13px;
+    color: gray;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+
+
+
+
+

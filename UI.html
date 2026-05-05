@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task manager</title>
+    <link rel="stylesheet" href="UI.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Daily Planner</h1>
+                <p>Turn Plans Into Progress</p>
+            </div>
+
+            <div class="sidemenu"|>
+                <button id="allTask">All Task  <span> 0</span></button><br>
+                <button id="pendingTask">Pending Task <span>0</span></button><br>
+                <button id="completedTask">Completed Task <span>0</span></button>
+            </div>
+        </div>
+
+        <div class="mainmenu">
+            <div class="header">
+                <h1>My To-Do List</h1>
+                <p>Your Day, Perfectly Organized</p>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="What Need To Be Done"/>
+                <button id="addTask">Add Task</button>
+            </div>
+
+            <div class="filter">
+                <button id="filallTask">All Task</button>
+                <button id="filpendingTask">Pending Task</button>
+                <button id="filcompletedTask">Completed Task</button>
+            </div>
+
+            <div class="tasklist" id="taskList">
+                <div class="taskitem">
+                    <div class="left">
+                        <input type="checkbox">
+                        <span class="taskname">Complete It Exam</span>
+                    </div>
+                    <div class="right">
+                        <span class="date">May 06,2026</span>
+                    </div>
+                    <div class="delete">
+                    <button class="deletebut">Delete Task</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>0 Task In Total</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
