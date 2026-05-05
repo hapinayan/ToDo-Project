@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="taskManager.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="caption">
+        <h1>Daily Planner</h1>
+        <p>Turn Plans Into Progress</p>
+    </div>
+
+    <div class="sidemenu">
+        <button id="allTask">All Task <span>0</span></button>
+        <button id="pendingTask">Pending Task <span>0</span></button>
+        <button id="completedTask">Completed Task <span>0</span></button>
+    </div>
+</div>
+
+<div class="mainmenu">
+
+    <div class="header">
+        <h1>My To-Do List</h1>
+        <p>Your Day, Perfectly Organized</p>
+        <p id="currentDate"></p>
+    </div>
+
+    <div class="input-section">
+        <input type="text" id="taskInput" placeholder="What Needs To Be Done" />
+        <button id="addTask">📝 Add Task</button>
+    </div>
+
+    <div class="filter">
+        <button id="filallTask">📋 All Task</button>
+        <button id="filpendingTask">⏳ Pending Task</button>
+        <button id="filcompletedTask">✅ Completed Task</button>
+    </div>
+
+    <div class="tasklist" id="taskList"></div>
+
+    <div class="footer">
+        <p id="totalText">0 Tasks In Total</p>
+    </div>
+
+</div>
+
+<script src="taskManager.js"></script>
+</body>
+</html>

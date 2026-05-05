@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    width: 220px;
+    background: #4a004d;
+    color: white;
+    padding: 20px;
+}
+
+.caption h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.caption p {
+    margin-top: -30px;
+    font-size: 15px;
+    color: #dcdde1;
+    margin-bottom: 60px;
+}
+
+.sidemenu button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #703e5f;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.mainmenu {
+    flex: 1;
+    padding: 20px;
+    background: #f5f6fa;
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.header p {
+    margin-top: -30px;
+    font-size: 15px;
+    color: #dcdde1;
+    margin-bottom: 60px;
+}
+
+#currentDate {
+    font-size: 20px;
+    color: rgb(96, 0, 67);
+    margin-top: -100px;
+    margin-left: 1000px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.input-section button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #4a004d;
+    color: white;
+}
+
+.filter button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 20px;
+    background: #dfe6e9;
+}
+
+.taskitem {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateTask {
+    font-size: 13px;
+    color: gray;
+    margin-top: 2px;
+    display: block;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.editbut, .deletebut {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.editbut { background: #0984e3; }
+.deletebut { background: #d63031; }
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
