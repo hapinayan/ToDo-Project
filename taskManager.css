@@ -2,7 +2,7 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .navbar {
@@ -24,16 +24,42 @@ body {
     margin-bottom: 60px;
 }
 
-.sidemenu button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
+#currentDate {
+    font-size: 20px;
+    color: rgb(255, 249, 253);
+}
+
+.sidemenu p {
+    width: 90%;
+    padding: 12px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     background: #703e5f;
     color: white;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 60px;
-}
+  }
+  
+  .sidemenu p:hover {
+    background: #8a4d73;
+    transform: scale(1.03);
+  }
+
+  .sidemenu span {
+    background: white;
+    color: #703e5f;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  
+  #totalText {
+    background: #444;
+    justify-content: center;
+    font-weight: bold;
+  }
 
 .mainmenu {
     flex: 1;
@@ -42,51 +68,78 @@ body {
 }
 
 .header h1 {
-    font-size: 50px;
-    margin-top: 10px;
+    font-size: 80px;
+    margin-top: 0;
+    color: #4a004d;
 }
 
 .header p {
-    margin-top: -30px;
+    margin-top: -40px;
     font-size: 15px;
-    color: #dcdde1;
+    color: #69037e;
     margin-bottom: 60px;
 }
 
-#currentDate {
-    font-size: 20px;
-    color: rgb(96, 0, 67);
-    margin-top: -100px;
-    margin-left: 1000px;
-}
+
 
 .input-section {
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .input-section input {
     flex: 1;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     border: 1px solid #ccc;
 }
 
-.input-section button {
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: none;
-    background: #4a004d;
-    color: white;
+#addTask {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #4a004d;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#addTask:hover {
+    transform: translateY(-2px);
+}
+
+#addTask:active {
+    transform: scale(0.96);
+}
+
+.filter {
+    display: inline-flex;
+    gap: 12px;
+    padding: 10px 20px;
+    background: #f5f7fa;
+    border-radius: 12px;
 }
 
 .filter button {
-    padding: 6px 10px;
-    margin-right: 5px;
+    padding: 10px 18px;
     border: none;
-    border-radius: 20px;
-    background: #dfe6e9;
+    border-radius: 8px;
+    background: #e0e6ed;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter button:hover {
+    background: #961c85;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.filter button:active {
+    transform: scale(0.95);
 }
 
 .taskitem {
@@ -112,11 +165,6 @@ body {
     gap: 10px;
 }
 
-.actions {
-    display: flex;
-    gap: 5px;
-}
-
 .editbut, .deletebut {
     border: none;
     padding: 6px 10px;
@@ -132,3 +180,4 @@ body {
     text-decoration: line-through;
     color: gray;
 }
+

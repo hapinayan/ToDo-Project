@@ -156,7 +156,7 @@ function updateCount() {
     document.getElementById("pendingTask").innerHTML = `Pending Task <span>${pending}</span>`;
     document.getElementById("completedTask").innerHTML = `Completed Task <span>${completed}</span>`;
 
-    document.getElementById("totalText").innerText = total + " Tasks In Total";
+    document.getElementById("totalText").innerText = "Total Task " + total;
 }
 
 loadTask();
